@@ -1,0 +1,12 @@
+--- src/ui/SettingsWidget.cpp	2023-10-27
++++ src/ui/SettingsWidget.cpp	2023-10-27
+@@ -148,6 +148,10 @@
+             m_googleStatusLabel->setText(tr("Refreshing Token..."));
+             m_googleStatusLabel->setStyleSheet("font-weight: bold; color: #8e44ad;");
+             break;
++        case GoogleOAuthManager::State::INVALID:
++            m_googleStatusLabel->setText(tr("Invalid Token / Error"));
++            m_googleStatusLabel->setStyleSheet("font-weight: bold; color: #e74c3c;");
++            break;
+     }
+ }

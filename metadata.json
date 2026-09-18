@@ -1,0 +1,8 @@
+{
+  "name": "Schedule AI - Smart Calendar",
+  "description": "Smart calendar and schedule manager powered by Gemini AI with interactive study flowcharts, knowledge linking, learning packages, AI quiz generator, ICS import/export, and Qt6 support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

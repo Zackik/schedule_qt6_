@@ -1,0 +1,21 @@
+---
+Checks: '
+  -*,
+  bugprone-*,
+  cert-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -cppcoreguidelines-owning-memory,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  -cppcoreguidelines-pro-type-vararg,
+  -readability-magic-numbers,
+  -readability-braces-around-statements
+'
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle: none

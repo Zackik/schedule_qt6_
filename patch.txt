@@ -1,0 +1,36 @@
+--- src/ui/ScheduleWidget.cpp
++++ src/ui/ScheduleWidget.cpp
+@@ -19,6 +19,7 @@
+ #include <QHeaderView>
++#include <QQuickWidget>
++#include <QQmlContext>
+ 
+ class CompletionChartWidget : public QWidget {
+@@ -389,6 +390,14 @@
+ 
+     m_mainTabs = new QTabWidget(this);
++    
++    m_qmlDashboard = new QQuickWidget(this);
++    m_qmlDashboard->setSource(QUrl("qrc:/qml/Dashboard.qml"));
++    m_qmlDashboard->setResizeMode(QQuickWidget::SizeRootObjectToView);
++    m_mainTabs->addTab(m_qmlDashboard, "✨ QML Dashboard");
++
+     m_mainTabs->addTab(createScheduleTab(), "📅 Lịch & Sự kiện");
+     m_mainTabs->addTab(createAiTab(), "🤖 Trợ lý AI Gemini");
+@@ -1187,6 +1196,16 @@
+     if (m_completionChart) {
+         static_cast<CompletionChartWidget*>(m_completionChart)->updateChart();
+     }
++    
++    if (m_qmlDashboard && m_qmlDashboard->rootObject()) {
++        int comp = 0;
++        for (const auto &e : m_calendarManager->m_localEvents) {
++            if (e.isCompleted) comp++;
++        }
++        QMetaObject::invokeMethod(m_qmlDashboard->rootObject(), "updateMetrics",
++                                  Q_ARG(QVariant, total),
++                                  Q_ARG(QVariant, comp),
++                                  Q_ARG(QVariant, totalCost));
++    }
+ }
+ 

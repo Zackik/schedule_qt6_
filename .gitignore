@@ -1,0 +1,18 @@
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+client_secret.json
+token*.json
+
+# Qt / build
+build/
+*.user
+*.user.*
+.qtc_clangd/
+
+# IDE
+.vscode/
+.idea/

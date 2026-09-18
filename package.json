@@ -1,0 +1,11 @@
+{
+  "name": "smart-schedule-qt",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Native C++ Qt6 Desktop Application",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Native C++ project. No Node build required.'",
+    "start": "node server.js"
+  }
+}
