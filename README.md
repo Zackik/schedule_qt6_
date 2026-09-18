@@ -1,3 +1,15 @@
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/495dd903-fb16-4952-9536-aa81f2fdd96f" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/3c0d7e7b-cdf2-4d35-96b1-4ce372a91b60" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/5f56ae4f-0e75-49a1-9f52-2e927e4566fb" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/4e56032f-ff34-4098-98f0-5472e4d9d08e" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/fb58c9d5-fea4-421e-a40d-584318f89afc" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/46edc7cb-6d66-4c6a-b4c4-733e3a14648e" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/a05f9327-f653-4ac7-a10d-40837cb503ca" />
+<img width="1391" height="998" alt="image" src="https://github.com/user-attachments/assets/187b8601-add3-4bbf-a5a0-a254de7fec3b" />
+
+
+
+
 # SmartSchedule: Native Qt6 Desktop AI Companion
 
 SmartSchedule has evolved from a simple calendar manager into a full-fledged **Native Desktop AI Companion**. It completely abandons Web, Electron, Node.js, and browser technologies in favor of high-performance, native OS integration via **C++17 and Qt6**.
